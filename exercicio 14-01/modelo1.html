@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super contador </title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+         <h1>Vamos contar</h1>
+    </header>
+    
+    <section>
+        <!-- AQUI COMEÇA O FORMS DE DADOS
+           #1 passr o id para o script
+           #2 dividir os inputs em <p>
+        -->
+        <div id="dados">
+                                                                   <!--  passar esse id para o script  --> 
+                <p>Inicio : <input type="number" name="valorin" id="txtini" > </p>
+                <p>Fim : <input type="number" name="valorf" id="valorfim" > </p>
+                <p>Passos: <input type="number" name="valorpasso" id="valorpasso" > </p>
+                    <input type="button" value="Verifique" onclick="fazer()"> 
+        </div>
+        <!-- a secção das respostas
+            #1 respostas
+        -->
+        <div id="res">
+             Preparando a contagem 
+        </div>
+
+    </section>   
+
+    <footer>
+          <p> &copy; Copyright</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

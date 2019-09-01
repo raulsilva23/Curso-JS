@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super contador </title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+         <h1>Analisador de numeros</h1>
+    </header>
+    
+    <section>
+        <!-- AQUI COMEÇA O FORMS DE DADOS
+           #1 passr o id para o script
+           #2 dividir os inputs em <p>
+        -->
+        <div id="dados">
+                                                                   <!--  passar esse id para o script  --> 
+                Numero(entre a 100)
+                <input type="number" name="fnum" id="fnum">
+                <input type="button" value="add" onclick="adcionar()">
+                <br><br> <select name="flista" id="flista" size="6">Numero analisados</select>
+                <br><br><input type="button" value="Finalizar">
+        </div>
+        <!-- a secção das respostas
+            #1 respostas
+        -->
+        <div id="res">
+             Preparando a contagem 
+        </div>
+        <div id="res2">
+                Preparando a contagem 2
+           </div>
+
+    </section>   
+
+    <footer>
+          <p> &copy; Copyright</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
