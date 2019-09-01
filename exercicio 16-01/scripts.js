@@ -43,9 +43,43 @@ function adcionar() {
       
     }else{
       window.alert('Valor invalido  ou ja encotrado na lista')
-    }                
+    }      
+    
+    num.value = '' //apaga os valore
+    num.focus()  //foca no compo designado
   
 }//end---
+
+function finalizar() {
+  if (valores.length == 0) {
+    window.alert('add valores antes de finalizar')
+    
+  } else{
+    let tot = valores.length
+    let maior = valores[0]
+    let menor = valores [0]
+    let soma = 0
+    let media = 0
+    
+    for (let pos in valores) {
+      soma +=valores[pos]
+      if (valores[pos] > maior)  
+      maior = valores[pos]
+      if (valores[pos] < menor) 
+      menor = valores[pos]
+      }
+           media = soma / tot
+      res.innerHTML = `total é ${tot} <br>`
+      res.innerHTML += `o maior valor é ${maior} <br>`
+      res.innerHTML += `o menor valor é ${menor} <br>`
+      res.innerHTML += `a soma dos valores é ${soma} <br>`
+      res.innerHTML += `a media dos valores é ${media} <br>`
+    }  
+    
+
+   
+  }
+  
 
 
 
